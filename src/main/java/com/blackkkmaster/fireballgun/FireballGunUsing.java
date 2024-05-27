@@ -25,9 +25,7 @@ public class FireballGunUsing {
                     double x_cord = vec3d.x;
                     double y_cord = vec3d.y;
                     double z_cord = vec3d.z;
-                    player.sendMessage(Text.literal(vec3d.x + ", " + vec3d.y + ", " + vec3d.z));
                     FireballEntity fireballEntity = new FireballEntity(world, player, x_cord, y_cord, z_cord, FireballGunMain.POWER);
-//                    fireballEntity.setPosition(player.getX() + vec3d.x * 4.0, player.getBodyY(1) + 0.5, fireballEntity.getZ() + vec3d.z * 4.0);
                     fireballEntity.setPosition(player.getX() + vec3d.x, player.getY() + vec3d.x, player.getZ() + vec3d.x);
                     world.spawnEntity(fireballEntity);
                     world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_BLAZE_SHOOT, SoundCategory.NEUTRAL, 0.5f, 0.4f / (world.getRandom().nextFloat() * 0.4f + 0.8f));
