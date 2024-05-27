@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "fireball-gun",
+	"version": "${version}",
+	"name": "Fireball gun",
+	"description": "Мечтал стрелять файрболами? Мечты сбываются",
+	"authors": [
+		"BlackkkMaster"
+	],
+	"contact": {
+		"homepage": "https://github.com/BlackkkMaster/Fireball-Gun",
+		"sources": "https://github.com/BlackkkMaster/Fireball-Gun"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/fireball-gun/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.blackkkmaster.fireballgun.FireballGunMain"
+		],
+		"client": [
+			"com.blackkkmaster.fireballgun.FireballGunClient"
+		],
+		"fabric-datagen": [
+			"com.blackkkmaster.fireballgun.FireballGunDataGenerator"
+		]
+	},
+	"mixins": [
+		"fireball-gun.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

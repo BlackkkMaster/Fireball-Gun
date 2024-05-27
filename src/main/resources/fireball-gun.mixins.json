@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "com.blackkkmaster.fireballgun.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+	],
+	"client": [
+		"FireballGunMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
